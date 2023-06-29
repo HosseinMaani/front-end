@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-style: italic;
+    src: url('../fonts/Poppins-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: url('../fonts/Poppins-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 800;
+    src: url('../fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: italic;
+    src: url('../fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+:root{
+    --Purple: hsl(259, 100%, 65%);
+    --LightRed: hsl(0, 100%, 67%);
+    --White: hsl(0, 0%, 100%);
+    --OffWhite: hsl(0, 0%, 94%);
+    --LightGrey: hsl(0, 0%, 86%);
+    --SmokeyGrey: hsl(0, 1%, 44%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--OffWhite);
+}
+.box{
+    max-width: 30rem;
+    background-color: var(--White);
+    padding: 2.5rem 2rem;
+    border-radius: 20px 20px 120px 20px;
+}
+.section-inputs{
+    display: flex;
+}
+.section-inputs div{
+    display: flex;
+    margin-right: 1.2rem;
+    width: 25%;
+    flex-direction: column;
+}
+
+.section-inputs div label{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: var(--SmokeyGrey);
+}
+.section-inputs div input{
+    width: 100%;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--OffWhite);
+    color: var(--SmokeyGrey);
+}
+input.invalid{
+    border-color: var(--LightRed) !important;
+}
+label.invalid{
+    color: var(--LightRed) !important;
+}
+.error{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--LightRed);
+}
+.error-sm{
+    font-size: 10px;
+}
+
+.section-inputs div input:where(:focus,:active){
+    border-color: var(--Purple);
+}
+.calc{
+    position: relative;
+    margin: 1.5rem 0;
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+    background-color: var(--OffWhite);
+}
+.calc img{
+    width: 55px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--Purple);
+    border-radius: 50%;
+    padding: .9rem;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    font-size: 64px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: italic;
+}
+.results span{
+    color: var(--Purple);
+}
+
+@media screen and (max-width:600px) {
+    .box{
+        max-width: 90vw;
+    }
+    .calc{
+        margin: 2.5rem 0;
+    }
+    .calc img{
+        width: 48px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .results{
+        font-size: 32px;
+    }
+    .section-inputs{
+        justify-content: space-between;
+    }
+    .section-inputs div{
+        width: 30%;
+        margin-right: 5px;
+    }
+    .section-inputs div input{
+        font-size: 16px;
+    }
+}
+
+.attribution{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--Purple);
+}
