@@ -14,19 +14,21 @@
 }
 
 body{
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--lightGray);
     font-size: 15px;
 }
 
 .box{
+
     border-radius: 20px;
     padding: 1rem;
     display: flex;
-    flex-basis: 20rem;
+    width: 20rem;
     flex-direction: column;
     background-color: var(--white);
 }
@@ -49,9 +51,17 @@ body{
     color: var(--grayishBlue);
     padding-top: 1rem;
 }
+.attribution{
+    margin-top: 1rem;
+    font-weight: 700;
+}
 
+.attribution a{
+    text-decoration: none;
+    color: var(--grayishBlue);
+}
 @media screen and (max-width:375px) {
     .box{
-        flex-basis: 90vw;
+        width: 90vw;
     }
 }
