@@ -1,0 +1,236 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+:root{
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+.attribution{
+    margin-top: 1rem;
+    color: white;
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--Tomato);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-weight: 400;
+    font-family: Roboto;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--CharcoalGrey);
+}
+
+.Newsletter-box{
+    display: flex;
+    width: 50rem;
+    background-color: var(--White);
+    border-radius: 20px;
+    padding: 1rem;
+}
+.Newsletter-box .section-left{
+    width: 55%;
+    text-align: start;
+    padding: 3rem 2rem;
+}
+.Newsletter-box .section-rigth{
+    width: 45%;
+    display: block;
+    border-radius: inherit;
+    background: url('../images/illustration-sign-up-desktop.svg') no-repeat right center;
+}
+.title{
+    
+    font-weight: 700;
+    font-size: 55px;
+    color: var(--DarkSlateGrey);
+}
+.info{
+    line-height: 25px;
+    padding: 1rem 0;
+    
+    color: var(--DarkSlateGrey);
+    font-size: 16px;
+}
+
+.list{
+    
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--DarkSlateGrey);
+}
+.list img{
+    margin-right: 1rem;
+}
+.list:first-of-type{
+    margin-top: 0;
+}
+
+.send-field{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 2.5rem;
+}
+.send-field label{
+    font-size: 13px;
+    font-weight: 700;
+}
+.send-field input{
+    margin-top: 7px;
+    padding: 1rem;
+    
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid var(--Grey);
+}
+button{
+    font-family: Roboto;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 1rem .5rem;
+    font-weight: 700;
+    color: var(--White);
+    font-size: 15px;
+    background-color: var(--DarkSlateGrey);
+}
+.input-labels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-error{
+    display: none;
+    color: var(--Tomato);
+    font-weight: 700;
+    font-size: 13px;
+}
+.input-error.show{
+    display: block;
+}
+input:invalid{
+    background-color:hsl(4, 88%, 90%); ;
+    border:1px solid var(--Tomato) !important;
+    color: var(--Tomato);
+}
+input,button{
+    cursor: pointer;
+}
+input:focus{
+    border-color: var(--DarkSlateGrey);
+}
+button:hover{
+    background:linear-gradient(45deg,hsl(350, 100%, 67%),hsl(4, 82%, 63%),hsl(4, 92%, 61%));
+}
+.hide{
+    display: none !important;
+}
+.show{
+    display: flex !important;
+}
+
+
+.Success-box{
+    width: 22rem;
+    border-radius: 1.3rem;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+}
+.Success-box h1{
+    font-size: 40px;
+    font-weight: 700;
+    padding: 1.5rem 0 .5rem 0;
+    color: var(--DarkSlateGrey);
+}
+
+.Success-box p{
+    line-height: 1.2rem;
+    font-size: 12px;
+    color: var(--DarkSlateGrey);
+}
+
+.Success-box p span{
+font-weight: 700;
+color: var(--CharcoalGrey);
+}
+.Success-box button{
+    font-size: 14px;
+}
+
+@media screen and (max-width:390px) {
+    .Newsletter-box{
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+        flex-direction: column-reverse;
+    }
+    .Newsletter-box .section-left{
+        width: 100%;
+    }
+    .Newsletter-box .section-rigth{
+        display: block !important;
+        border-radius: 0 0 10px 10px;
+        height: 450px;
+        width: 100%;
+        padding: 0;
+        background: url('../images/illustration-sign-up-mobile.svg') no-repeat center bottom;
+
+    }
+    .Newsletter-box .title{
+        font-size: 40px;
+    }
+    .Success-box{
+        width: 100%;
+        height: 100%;
+    }
+    .Success-box img{
+        margin-top: 40%;
+        width: 64px;
+    }
+    .Success-box button{
+        margin-top: auto;
+    }
+    .attribution{
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .Newsletter-box{
+        width: auto;
+    }
+    .Newsletter-box .section-left{
+        width: 100%;
+    }
+    .Newsletter-box .section-rigth{
+        display: none;
+    }
+    .attribution{
+        text-align: center;
+    }
+}

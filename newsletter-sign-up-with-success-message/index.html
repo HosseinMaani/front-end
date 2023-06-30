@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+
+<body>
+
+  <div class="Newsletter-box show">
+    <div class="section-left">
+      <h1 class="title">Stay updated!</h1>
+
+      <p class="info">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <div class="list">
+        <img width="20px" src="./assets/images/icon-list.svg" alt="">
+        Product discovery and building what matters
+      </div>
+      <div class="list">
+        <img width="20px" src="./assets/images/icon-list.svg" alt="">
+        Measuring to ensure updates are a success
+      </div>
+      <div class="list">
+        <img width="20px" src="./assets/images/icon-list.svg" alt="">
+        And much more!
+      </div>
+      <form>
+        <div class="send-field">
+          <div class="input-labels">
+            <label for="email">Email address</label>
+            <span class="input-error">Valid email requierd</span>
+          </div>
+          <input required  oninvalid="invalidSet()" type="email" id="email" placeholder="email@company.com">
+          <button type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="section-rigth">
+    </div>
+
+  </div>
+  <div class="Success-box hide">
+    <img width="40px" src="./assets/images/icon-success.svg" alt="">
+    <h1>Thanks for<br/> subscribing!</h1>
+    <p>
+      A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button type="button">
+      Dismiss message
+    </button>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a target="_blank" href="https://github.com/hossein1269">Mohmmad Hossein Maani</a>.
+  </div>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
