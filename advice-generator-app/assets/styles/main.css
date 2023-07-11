@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope';
+}
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body{
+    background-color: var(--DarkBlue);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.advice-box{
+    position: relative;
+    max-width: 40vw;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    background-color: var(--DarkGrayishBlue);
+}
+
+.advice-id{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--NeonGreen);
+}
+
+.advice-box p{
+    color: var(--LightCyan);
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 28px;
+}
+.seprator{
+    margin: 2rem 0;
+    height: 20px;
+    background: url('../images/pattern-divider-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.dice{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: var(--NeonGreen);
+    position: absolute;
+    top: 100;
+    left: 50%;
+    transition: box-shadow .5s ease;
+    transform: translateX(-50%);
+}
+.dice:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px var(--NeonGreen);
+}
+
+.attribution{
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--GrayishBlue);
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--NeonGreen);
+}
+
+@media screen and (max-width:1000px) {
+    .advice-box{
+        max-width: 50vw;
+    }
+}
+@media screen and (max-width:700px) {
+    .seprator{
+        background: url('../images/pattern-divider-mobile.svg') no-repeat center center;
+    }
+    .advice-box{
+        max-width: 90vw;
+    }
+}
+
+.animation{
+    animation: DiceAnimation 1s ease infinite forwards;
+}
+@keyframes DiceAnimation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

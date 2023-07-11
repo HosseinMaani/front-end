@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/main.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+
+<body>
+    <section class="back-img">
+      <div class="card-img">
+        <div class="card-front">
+          <span class="card-number">0000 0000 0000 0000</span>
+          <span class="card-name">Jane Appleseed</span>
+          <span class="card-expire">00/00</span>
+          <img class="card-logo" src="./assets/images/card-logo.svg" alt="">
+          <img src="./assets/images/bg-card-front.png" alt="">
+        </div>
+        <div class="card-back">
+          <span class="card-cvc">000</span>
+          <img src="./assets/images/bg-card-back.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="card-info">
+      <div class="form-info">
+        <div class="form-fields">
+          <label for="cardholder_name">CARDHOLDER NAME</label>
+          <input oninput="changeCardInfo(this,'name')" type="text" placeholder="e.g. Jane Appleseed"
+            id="cardholder_name">
+        </div>
+        <div class="form-fields">
+          <label for="card-number">Card Number</label>
+          <input onkeypress="return numberOnly(event);" maxlength="16" onchange="checkCardOnlyNumber(this)"
+            oninput="changeCardInfo(this,'number')" type="text" placeholder="1234 5678 9123 0000" id="card_number">
+          <span class="error">Wrong format, numbers only</span>
+        </div>
+        <div class="form-fields ">
+          <div class="inputs">
+            <div class="labels">
+              <label for="Exp">Exp. Date (MM/YY)</label>
+              <label for="Exp"> CVC</label>
+            </div>
+            <div class="input">
+              <input onkeypress="return numberOnly(event);" onchange="CheckValidity(this)" maxlength="2"
+                oninput="changeCardInfo(this,'mm')" type="text" placeholder="MM" id="Exp_month">
+              <input onkeypress="return numberOnly(event);" onchange="CheckValidity(this)" maxlength="2"
+                oninput="changeCardInfo(this,'yy')" type="text" placeholder="YY" id="Exp_year">
+              <input onkeypress="return numberOnly(event);" onchange="CheckValidity(this)" maxlength="3"
+                oninput="changeCardInfo(this,'cvc')" type="text" id="cvc" placeholder="e.g. 123">
+            </div>
+            <div class="errors">
+              <span id="e1">can't be blank</span>
+              <span id="e2">can't be blank</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="form-fields">
+          <button type="button" onclick="processFroms('thanks')" class="button">Confirm</button>
+        </div>
+      </div>
+      <div class="thanks hide">
+        <img src="./assets/images/icon-complete.svg"/>
+        <h6>Thank you!</h6>
+        <span>We've added your card details</span>
+        <a onclick="processFroms('thanks')" class="button">Continue</a>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/hossein1269" target="_blank">Mohmmad Hossein Maani</a>.
+      </div>
+
+    </section>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
