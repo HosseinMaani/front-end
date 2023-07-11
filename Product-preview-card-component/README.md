@@ -3,7 +3,7 @@
 This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 ### Links
 
-- Live Site URL: [Product preview card component](https://product-preview-card-component-ten-ecru.vercel.app/)
+- Live Site URL: [Product preview card component](https://hossein1269.github.io/front-end/Product-preview-card-component/)
 
 ## My process
 

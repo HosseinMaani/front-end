@@ -5,7 +5,7 @@ This is a solution to the [Interactive card details form challenge on Frontend M
 
 ### Links
 
-- Live Site URL: [Interactive card details](https://interactive-card-details-livid.vercel.app/)
+- Live Site URL: [Interactive card details](https://hossein1269.github.io/front-end/interactive-card-details/)
 
 ## My process
 

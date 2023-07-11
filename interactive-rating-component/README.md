@@ -4,7 +4,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ### Links
 
-- Live Site URL: [Interactive rating component](https://interactive-rating-component-eta-three.vercel.app/)
+- Live Site URL: [Interactive rating component](https://hossein1269.github.io/front-end/interactive-rating-component/)
 
 ## My process
 

@@ -4,7 +4,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [Order summary card](https://order-summary-component-e753tkpc0-hossein1269.vercel.app/)
+- Live Site URL: [Order summary card](https://hossein1269.github.io/front-end/order-summary-component/)
 
 ## My process
 

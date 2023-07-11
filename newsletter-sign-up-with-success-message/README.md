@@ -5,7 +5,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Live Site URL: [Newsletter sign-up](https://news-letter-beta.vercel.app/)
+- Live Site URL: [Newsletter sign-up](https://hossein1269.github.io/front-end/newsletter-sign-up-with-success-message/)
 
 ## My process
 
