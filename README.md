@@ -4,12 +4,12 @@
 
 
 ## Project URLs
-- https://hosseinmaani.github.io/front-end/Calculator-App
-- https://hosseinmaani.github.io/front-end/Product-preview-card-component
-- https://hosseinmaani.github.io/front-end/advice-generator-app
-- https://hosseinmaani.github.io/front-end/age-calculator
-- https://hosseinmaani.github.io/front-end/interactive-card-details
-- https://hosseinmaani.github.io/front-end/interactive-rating-component
-- https://hosseinmaani.github.io/front-end/newsletter-sign-up-with-success-message
-- https://hosseinmaani.github.io/front-end/order-summary-component
-- https://hosseinmaani.github.io/front-end/qr-code
+- https://hosseinmaani.github.io/frontend-designs/Calculator-App
+- https://hosseinmaani.github.io/frontend-designs/Product-preview-card-component
+- https://hosseinmaani.github.io/frontend-designs/advice-generator-app
+- https://hosseinmaani.github.io/frontend-designs/age-calculator
+- https://hosseinmaani.github.io/frontend-designs/interactive-card-details
+- https://hosseinmaani.github.io/frontend-designs/interactive-rating-component
+- https://hosseinmaani.github.io/frontend-designs/newsletter-sign-up-with-success-message
+- https://hosseinmaani.github.io/frontend-designs/order-summary-component
+- https://hosseinmaani.github.io/frontend-designs/qr-code
